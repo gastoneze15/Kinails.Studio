@@ -5,29 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios</title>
     <link rel="stylesheet" href="../css/styles.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
 </head>
 <body>
     
 <header>
-    
-<div class="barra">
-    <nav class="barra-de-navegacion">
-        <div>
-            <a href="../index.html" class="logo-inicio">
-            <img src="../assets/img/kinails.jpg-removebg-preview.png" alt="logo de kinails" height="140">
+    <nav class="navbar navbar-expand-lg bg-kinails">
+    <div class="container">
+        
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+        <img src="../assets/img/kinails.jpg-removebg-preview.png" alt="Kinails Studio" height="120" class="me-2">
+        <span class="brand-text d-none d-sm-inline">Kinails Studio</span>
         </a>
-        </div>
 
-        <ul class="nav-link">
-        <li><a href="../pages/reservas.html">Reservas de turno</a></li>
-        <li><a href="../pages/quienes-somos.html">Quienes somos</a></li>
-        <li><a href="../pages/donde-encontrarnos.html">Donde encontrarnos</a></li>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../pages/reservas.html">Reservas de turno</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/quienes-somos.html">Quienes somos</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/donde-encontrarnos.html">Dónde encontrarnos</a></li>
         </ul>
+        </div>
+    </div>
     </nav>
-
-</div>
 </header>
-
 <main>
     <h1>Nuestros servicios y precios</h1>
 
@@ -115,7 +123,7 @@
 </footer>
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
 </body>
 </html>
