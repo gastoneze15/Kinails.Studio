@@ -1,30 +1,44 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-*   {margin: 0%;
+* {
+    margin: 0%;
     padding: 0%;
 }
 
-main{font-family:"roboto" sans-serif;
-background-color:rgb(254, 189, 252);}
+main {
+    font-family: "roboto" sans-serif;
+    background-color: rgb(254, 189, 252);
+}
 
-footer{ text-align: center;
-background-color: rgba(148, 144, 144, 0.573);}
+footer {
+    text-align: center;
+    background-color: rgba(148, 144, 144, 0.573);
+}
 
 
 
-.bg-kinails { background: #b690ff; }            
-.navbar .navbar-brand, .navbar .nav-link { color: #111; }
-.navbar .nav-link:hover { color: #000; }
+.bg-kinails {
+    background: #b690ff;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #111;
+}
+
+.navbar .nav-link:hover {
+    color: #000;
+}
 
 .navbar-toggler {
-    border-color: rgba(0,0,0,.15);
+    border-color: rgba(0, 0, 0, .15);
 }
-.navbar-toggler-icon{
-    background-image: var(--bs-navbar-toggler-icon-bg, 
-    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"));
+
+.navbar-toggler-icon {
+    background-image: var(--bs-navbar-toggler-icon-bg,
+            url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"));
 }
 
 @media (max-width: 768px) {
@@ -34,21 +48,23 @@ background-color: rgba(148, 144, 144, 0.573);}
     }
 }
 
-h1{text-align: center;
-color: rgb(0, 1, 1) !important;
-text-decoration: underline;
+h1 {
+    text-align: center;
+    color: rgb(0, 1, 1) !important;
+    text-decoration: underline;
 }
 
 a {
     display: flex;
     color: rgba(0, 0, 0, 0.858);
     padding: 14px 16px;
-    text-decoration :none;
-    text-align:center;
+    text-decoration: none;
+    text-align: center;
     font-weight: bold;
 }
 
-.boton{ width: 250px;
+.boton {
+    width: 250px;
     background-color: #fa42fd8f;
     display: block;
     margin: 0 auto;
@@ -61,8 +77,9 @@ a {
 #carouselExampleCaptions.carousel {
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0,0,0,.12);
-  background: #f5f5f546;      /* fondo visible cuando la imagen no llena */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+    background: #f5f5f546;
+    /* fondo visible cuando la imagen no llena */
 }
 
 .row {
@@ -76,12 +93,13 @@ a {
     justify-content: center;
 }
 
-p {font-size:large;
-text-align:center;
-font-weight: bold;
+p {
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
 }
 
-h2{
+h2 {
     color: rgba(12, 163, 213, 0.795) !important;
     text-align: center;
     text-decoration: underline;
@@ -120,14 +138,14 @@ h2{
     font-weight: bold;
 }
 
-.servicio{
+.servicio {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
 }
 
-h3{
+h3 {
     color: rgba(12, 163, 213, 0.795) !important;
     text-align: center;
     text-decoration: underline;
@@ -136,33 +154,37 @@ h3{
 
 /* PAGINA QUIENES SOMOS */
 
-.somos{
+.somos {
     /* text-align: center; */
     color: rgb(0, 0, 1);
     text-decoration: underline;
     background-color: rgb(254, 189, 252);
     margin-bottom: -1px;
 }
+
 #quienes-somos {
     display: flex;
     background-color: rgb(254, 189, 252);
     justify-content: space-around;
     margin-top: 1px;
 }
-#quienes-somos video{
+
+#quienes-somos video {
     display: block;
-    width: min(100%, 520px); 
+    width: min(100%, 520px);
     margin-top: 50px;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,.12);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
 }
+
 .comentario-video {
     text-align: center;
     margin-top: 0px;
     font-size: 1.2rem;
     background-color: rgba(0, 0, 0, 0.45);
     color: rgba(28, 249, 253, 0.795);
+    border-radius: 8px;
 }
 
 .video-contenedor {
@@ -171,25 +193,28 @@ h3{
 }
 
 .comentario-superpuesto {
-    position: absolute;
-  bottom: 25px; /* distancia desde abajo del video */
+    position:static;
+    bottom: 25px;
+    /* distancia desde abajo del video */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(6%);
     color: rgba(28, 249, 253, 0.795);
     font-size: 1.1rem;
     font-weight: 500;
-  background: rgba(0, 0, 0, 0.45); /* fondo oscuro semitransparente */
+    background: rgba(0, 0, 0, 0.45);
+    /* fondo oscuro semitransparente */
     padding: 6px 12px;
     border-radius: 8px;
     text-align: center;
-  max-width: 90%; /* evita que se corte el texto */
+    max-width: 90%;
+    /* evita que se corte el texto */
     line-height: 1.4;
 }
 
 /* PAGINA DE RESERVACIONES */
 
 
-main h1{
+main h1 {
     margin: 0 0 .7rem;
     text-align: center;
     font-weight: 800;
@@ -197,7 +222,7 @@ main h1{
 }
 
 
-#reserva > p{
+#reserva>p {
     text-align: center;
     max-width: 820px;
     margin: 0.25rem auto 1.5rem;
@@ -205,7 +230,7 @@ main h1{
 }
 
 
-#formulario-reserva{
+#formulario-reserva {
     background: var(--card);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
@@ -213,27 +238,28 @@ main h1{
     max-width: 820px;
     margin: 0 auto;
     display: grid;
-    gap: 1.2rem;               
+    gap: 1.2rem;
 }
 
 
-#formulario-reserva > div{
+#formulario-reserva>div {
     display: grid;
     gap: .4rem;
 }
 
 
-@media (min-width: 768px){
-    #formulario-reserva{
-    grid-template-columns: 1fr 1fr;
+@media (min-width: 768px) {
+    #formulario-reserva {
+        grid-template-columns: 1fr 1fr;
     }
-    #formulario-reserva > div:has(textarea){
-    grid-column: 1 / -1;
+
+    #formulario-reserva>div:has(textarea) {
+        grid-column: 1 / -1;
     }
 }
 
 
-#formulario-reserva label{
+#formulario-reserva label {
     font-weight: 600;
 }
 
@@ -241,7 +267,7 @@ main h1{
 #formulario-reserva input[type="tel"],
 #formulario-reserva input[type="date"],
 #formulario-reserva select,
-#formulario-reserva textarea{
+#formulario-reserva textarea {
     border: 1px solid #e5e7eb;
     border-radius: 12px;
     padding: .8rem .9rem;
@@ -250,19 +276,20 @@ main h1{
     outline: none;
 }
 
-#formulario-reserva textarea{
-    min-height: 120px; resize: vertical;
+#formulario-reserva textarea {
+    min-height: 120px;
+    resize: vertical;
 }
 
 #formulario-reserva input:focus,
 #formulario-reserva select:focus,
-#formulario-reserva textarea:focus{
+#formulario-reserva textarea:focus {
     border-color: #86efef;
     box-shadow: 0 0 0 4px rgba(121, 245, 243, 0.47);
 }
 
 /* Botón enviar */
-#formulario-reserva button[type="submit"]{
+#formulario-reserva button[type="submit"] {
     grid-column: 1 / -1;
     justify-self: center;
     border: none;
@@ -272,17 +299,23 @@ main h1{
     cursor: pointer;
     background: linear-gradient(135deg, var(--brand), #a0f7f4);
     color: #075e5c;
-    box-shadow: 0 10px 18px rgba(121,245,242,.35);
+    box-shadow: 0 10px 18px rgba(121, 245, 242, .35);
 }
 
-#formulario-reserva button[type="submit"]:hover{
+#formulario-reserva button[type="submit"]:hover {
     transform: translateY(-1px);
-    box-shadow: 0 14px 24px rgba(121,245,242,.45);
+    box-shadow: 0 14px 24px rgba(121, 245, 242, .45);
     filter: saturate(1.04);
 }
 
-#formulario-reserva ::placeholder{ color:#9ca3af }
-#formulario-reserva select{ appearance: none; background-image: none; }
+#formulario-reserva ::placeholder {
+    color: #9ca3af
+}
+
+#formulario-reserva select {
+    appearance: none;
+    background-image: none;
+}
 
 /* PAGINA DE CONTACTO */
 
@@ -294,7 +327,7 @@ main h1{
 
 #contacto a {
     display: block;
-    
+
     color: #1b7b7b;
     padding: 14px 16px;
     text-decoration: none;
@@ -302,19 +335,20 @@ main h1{
     text-decoration-line: underline;
     width: fit-content;
 }
+
 #contacto .wsp,
 #contacto .gm,
 #contacto .ig {
-    display: inline-flex;          
-    align-items: center;           
-    gap: 5px;                      
-    margin: 10px 0;                
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
     font-weight: 700;
     padding: 6px 10px;
 }
 
 
-.mapa{
+.mapa {
     display: flex;
     justify-content: center;
     max-width: 100%;
