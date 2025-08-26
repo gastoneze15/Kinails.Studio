@@ -6,6 +6,14 @@
     align-items: center;
   }
 }
+@media (min-width: 768px) {
+  #formulario-reserva {
+    grid-template-columns: 1fr 1fr;
+  }
+  #formulario-reserva > div:has(textarea) {
+    grid-column: 1/-1;
+  }
+}
 * {
   margin: 0%;
   padding: 0%;
@@ -63,11 +71,13 @@ div.row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
-  justify-content: center;
 }
 div.row div.carouselExampleCaptions.carousel {
   border-radius: 16px;
@@ -85,5 +95,116 @@ div.row div.carouselExampleCaptions.carousel {
   padding: 5px;
   border-radius: 10px;
 }
+
+/* PAGINA DE SERVICIOS */
+.acrilico {
+  padding: 50px;
+  margin: 20px;
+  font-weight: bold;
+}
+.acrilico .servicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.Capping {
+  padding: 50px;
+  margin: 20px;
+  font-weight: bold;
+}
+.Capping .servicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.semi {
+  padding: 50px;
+  margin: 20px;
+  font-weight: bold;
+}
+.semi .servicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.decoracion {
+  padding: 50px;
+  margin: 20px;
+  font-weight: bold;
+}
+.decoracion .servicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.retirado {
+  padding: 50px;
+  margin: 20px;
+  font-weight: bold;
+}
+.retirado .servicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+h3 {
+  color: rgba(12, 163, 213, 0.795) !important;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.7rem;
+}
+
+/* PAGINA QUIENES SOMOS */
+.somos {
+  color: rgb(0, 0, 1);
+  text-decoration: underline;
+  background-color: rgb(254, 189, 252);
+  margin-bottom: -1px;
+}
+
+#quienes-somos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(254, 189, 252);
+  margin-top: 1px;
+}
+#quienes-somos video {
+  display: block;
+  width: min(100%, 520px);
+  margin-top: 50px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 3px;
+}
+
+.comentario-video {
+  text-align: center;
+  margin-top: 0px;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.45);
+  color: rgba(12, 163, 213, 0.795) !important;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+/* PAGINA DE RESERVACIONES */
 
 /*# sourceMappingURL=estilo.css.map */

@@ -86,11 +86,14 @@ a {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin-top: calc(-1 * var(--bs-gutter-y));
     margin-right: calc(-.5 * var(--bs-gutter-x));
     margin-left: calc(-.5 * var(--bs-gutter-x));
-    justify-content: center;
+    
 }
 
 p {
@@ -166,6 +169,7 @@ h3 {
     display: flex;
     background-color: rgb(254, 189, 252);
     justify-content: space-around;
+    align-items: center;
     margin-top: 1px;
 }
 
@@ -185,30 +189,6 @@ h3 {
     background-color: rgba(0, 0, 0, 0.45);
     color: rgba(28, 249, 253, 0.795);
     border-radius: 8px;
-}
-
-.video-contenedor {
-    position: relative;
-    display: inline-block;
-}
-
-.comentario-superpuesto {
-    position:static;
-    bottom: 25px;
-    /* distancia desde abajo del video */
-    left: 50%;
-    transform: translateX(6%);
-    color: rgba(28, 249, 253, 0.795);
-    font-size: 1.1rem;
-    font-weight: 500;
-    background: rgba(0, 0, 0, 0.45);
-    /* fondo oscuro semitransparente */
-    padding: 6px 12px;
-    border-radius: 8px;
-    text-align: center;
-    max-width: 90%;
-    /* evita que se corte el texto */
-    line-height: 1.4;
 }
 
 /* PAGINA DE RESERVACIONES */
@@ -322,6 +302,7 @@ main h1 {
 #contacto {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -336,10 +317,15 @@ main h1 {
     width: fit-content;
 }
 
+/* .fa-instagram{
+    font-size: 30px;
+    text-decoration: none;
+    color: #e1306c;
+}
+ */
 #contacto .wsp,
 #contacto .gm,
 #contacto .ig {
-    display: inline-flex;
     align-items: center;
     gap: 5px;
     margin: 10px 0;
@@ -350,6 +336,8 @@ main h1 {
 
 .mapa {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     max-width: 100%;
 }

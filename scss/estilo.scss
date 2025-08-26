@@ -6,14 +6,35 @@
         align-items: center;
     }
 }
+@media (min-width: 768px) {
+    #formulario-reserva {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #formulario-reserva>div:has(textarea) {
+        grid-column: 1 / -1;
+    }
+}
 
 //variable
-$tipografia-principal:"roboto" sans-serif;
-$color-bgnav:#b690ff;
-$color-bg:rgb(254, 189, 252);
-$color-boton:#fa42fd8f;
+$tipografia-principal: "roboto" sans-serif;
+$color-bgnav: #b690ff;
+$color-bg: rgb(254, 189, 252);
+$color-boton: #fa42fd8f;
 $color-foot: rgba(148, 144, 144, 0.573);
 $color-titulo2: rgba(12, 163, 213, 0.795) !important;
+
+//Mixin
+@mixin miflex ($direccion, $justify, $aling) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+
+
+
 * {
     margin: 0%;
     padding: 0%;
@@ -49,7 +70,7 @@ h2 {
 }
 
 main {
-    font-family:$tipografia-principal;
+    font-family: $tipografia-principal;
     background-color: rgb(254, 189, 252);
 }
 
@@ -59,10 +80,12 @@ footer {
 }
 
 nav.navbar {
-    background:$color-bgnav;
+    background: $color-bgnav;
+
     div.container {
         color: #111;
         border-color: rgba(0, 0, 0, .15);
+
         div.navbar-toggler {
             background-image: var(--bs-navbar-toggler-icon-bg,
                     url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"));
@@ -73,12 +96,11 @@ nav.navbar {
 div.row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
-    display: flex;
+    @include miflex(row, center, center);
     flex-wrap: wrap;
     margin-top: calc(-1 * var(--bs-gutter-y));
     margin-right: calc(-.5 * var(--bs-gutter-x));
     margin-left: calc(-.5 * var(--bs-gutter-x));
-    justify-content: center;
 
     div.carouselExampleCaptions.carousel {
         border-radius: 16px;
@@ -90,10 +112,111 @@ div.row {
 
 .boton {
     width: 250px;
-    background-color:$color-boton;
+    background-color: $color-boton;
     display: block;
     margin: 0 auto;
     justify-content: center;
     padding: 5px;
     border-radius: 10px;
 }
+
+/* PAGINA DE SERVICIOS */
+
+
+.acrilico {
+    padding: 50px;
+    margin: 20px;
+    font-weight: bold;
+
+    .servicio {
+        @include miflex(row, space-between, center);
+        padding: 5px;
+    }
+}
+
+.Capping {
+    padding: 50px;
+    margin: 20px;
+    font-weight: bold;
+
+    .servicio {
+        @include miflex(row, space-between, center);
+        padding: 5px;
+    }
+}
+
+.semi {
+    padding: 50px;
+    margin: 20px;
+    font-weight: bold;
+
+    .servicio {
+        @include miflex(row, space-between, center);
+        padding: 5px;
+    }
+}
+
+.decoracion {
+    padding: 50px;
+    margin: 20px;
+    font-weight: bold;
+
+    .servicio {
+        @include miflex(row, space-between, center);
+        padding: 5px;
+    }
+}
+
+.retirado {
+    padding: 50px;
+    margin: 20px;
+    font-weight: bold;
+
+    .servicio {
+        @include miflex(row, space-between, center);
+        padding: 5px;
+    }
+}
+
+h3 {
+    color: $color-titulo2;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.7rem;
+}
+
+/* PAGINA QUIENES SOMOS */
+
+.somos {
+    color: rgb(0, 0, 1);
+    text-decoration: underline;
+    background-color: $color-bg;
+    margin-bottom: -1px;
+}
+
+#quienes-somos {
+    @include miflex(row, space-around, center);
+    background-color: $color-bg;
+    margin-top: 1px;
+
+    video {
+        display: block;
+        width: min(100%, 520px);
+        margin-top: 50px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+        padding: 3px;
+    }
+}
+.comentario-video {
+            text-align: center;
+            margin-top: 0px;
+            font-size: 1.2rem;
+            background-color: rgba(0, 0, 0, 0.45);
+            color: $color-titulo2;
+            border-radius: 8px;
+            margin: 5px;
+        }
+
+/* PAGINA DE RESERVACIONES */
