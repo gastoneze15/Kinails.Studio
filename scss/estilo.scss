@@ -138,7 +138,6 @@ div.row {
     padding: 50px;
     margin: 20px;
     font-weight: bold;
-
     .servicio {
         @include miflex(row, space-between, center);
         padding: 5px;
