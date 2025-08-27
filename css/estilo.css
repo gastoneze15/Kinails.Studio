@@ -14,6 +14,14 @@
     grid-column: 1/-1;
   }
 }
+#contacto a .fa-envelope, #contacto a .fa-whatsapp, #contacto a .fa-instagram {
+  font-size: 20px;
+  text-decoration: none;
+}
+#contacto a .fa-envelope:hover, #contacto a .fa-whatsapp:hover, #contacto a .fa-instagram:hover {
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.8));
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -54,6 +62,8 @@ main {
 footer {
   text-align: center;
   background-color: rgba(148, 144, 144, 0.573);
+  padding-top: 8px;
+  margin-bottom: -50px;
 }
 
 nav.navbar {
@@ -151,7 +161,6 @@ div.row div.carouselExampleCaptions.carousel {
 
 .retirado {
   padding: 50px;
-  margin: 20px;
   font-weight: bold;
 }
 .retirado .servicio {
@@ -206,5 +215,102 @@ h3 {
 }
 
 /* PAGINA DE RESERVACIONES */
+#reserva p {
+  text-align: center;
+  max-width: 820px;
+  margin: 0.25rem auto 1.5rem;
+  padding: 0 0.5rem;
+}
+
+#formulario-reserva {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+  max-width: 820px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.2rem;
+}
+#formulario-reserva div {
+  display: grid;
+  gap: 0.4rem;
+}
+#formulario-reserva div label {
+  font-weight: 600;
+}
+#formulario-reserva input[type=text],
+#formulario-reserva input[type=tel],
+#formulario-reserva input[type=date],
+#formulario-reserva select,
+#formulario-reserva textarea {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 0.8rem 0.9rem;
+  font-size: 1rem;
+  background: #fff;
+  outline: none;
+}
+#formulario-reserva input:focus,
+#formulario-reserva select:focus,
+#formulario-reserva textarea:focus {
+  border-color: #86efef;
+  box-shadow: 0 0 0 4px rgba(121, 245, 243, 0.47);
+}
+#formulario-reserva button[type=submit] {
+  grid-column: 1/-1;
+  justify-self: center;
+  border: none;
+  border-radius: 999px;
+  padding: 0.9rem 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--brand), #a0f7f4);
+  color: #36a7a5;
+  box-shadow: 0 10px 20px rgba(121, 245, 242, 0.35);
+}
+#formulario-reserva button[type=submit]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 15px 24px rgba(121, 245, 243, 0.543);
+  filter: saturate(1.04);
+}
+#formulario-reserva select {
+  appearance: none;
+  background-image: none;
+}
+
+/* PAGINA DE CONTACTO */
+#contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#contacto a {
+  display: block;
+  color: #2651ef;
+  padding: 14px 16px;
+  text-decoration: none;
+  justify-content: space-evenly;
+  text-decoration-line: underline;
+  width: fit-content;
+}
+#contacto a .fa-instagram {
+  color: #e1306c;
+}
+#contacto a .fa-whatsapp {
+  color: #25d366;
+}
+#contacto a .fa-envelope {
+  color: #0a66c2;
+}
+
+.mapa {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
 
 /*# sourceMappingURL=estilo.css.map */
