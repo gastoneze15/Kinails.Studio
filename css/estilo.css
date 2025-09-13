@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+/* @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+} */
 @media (min-width: 768px) {
   #formulario-reserva {
     grid-template-columns: 1fr 1fr;
@@ -265,8 +265,8 @@ h3 {
   padding: 0.9rem 1.6rem;
   font-weight: 700;
   cursor: pointer;
-  background: linear-gradient(135deg, var(--brand), #a0f7f4);
-  color: #36a7a5;
+  background: linear-gradient(135deg, #774ae9, #a0f7f4);
+  color: #000909;
   box-shadow: 0 10px 20px rgba(121, 245, 242, 0.35);
 }
 #formulario-reserva button[type=submit]:hover {
